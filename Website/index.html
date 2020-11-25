@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> AJ </title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="res/css/styles.css">
+</head>
+	<nav id="navbar_top" class="navbar navbar-expand-md navbar-dark pr-0" style="background-color: #000000EE;">
+	<a href="#" class="navbar-brand navbar-logo"> AJ </a>
+	<div class="navbar-nav" id="navbar-collapsed">
+		<a href="#home" class="nav-item nav-link navbar-brand">
+			<img src="res/img/home-24px.svg" alt="H">
+		</a>
+		<a href="#about" class="nav-item nav-link navbar-brand">
+			<img src="res/img/person-24px.svg" style="filter: invert(0);" alt="A">
+		</a>
+		<a href="#work" class="nav-item nav-link navbar-brand">
+			<img src="res/img/Psyduck-512.png" style="width: 25px; height: 25px;" alt="W">
+		</a>
+		<a href="#stuff" class="nav-item nav-link navbar-brand">
+			<img src="res/img/work-24px.svg" style="filter: invert(0);" alt="S">
+		</a>
+		<a href="#team" class="nav-item nav-link navbar-brand">
+			<img src="res/img/perm_phone_msg-24px.svg" style="filter: invert(0);" alt="C">
+		</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse">
+		<div id="navbarFull" class="navbar-nav ml-auto pr-2">
+			<a href="index.html#home" class="nav-item nav-link">HOME</a>
+			<a href="index.html#about" class="nav-item nav-link">ABOUT</a>
+			<a href="index.html#work" class="nav-item nav-link">PREREQs</a>
+			<a href="index.html#stuff" class="nav-item nav-link">WORK</a>
+			<a href="index.html#team" class="nav-item nav-link">TEAM</a>
+		</div>
+	</div>
+</nav>
+<body onload="addCounter()">
+	<div id="vert_page">
+		<div id="home" class="section main container-fluid">
+			<div class="snap-pad"></div>
+			<div class="row h-adjust-first">
+				<div class="col-xl vertical-center">
+					<h1 class="main_greeting"> Hello! </h1>
+					<h2 class="main_intro"> This is Team AJ </h2>
+					<p style="color: white; font-size: 40px"class="main_desc">We Have <span id="main_type"></span> <span id="main_cursor"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="about" class="section ourproject container-fluid">
+			<div class="snap-pad"></div>
+			<button type="button" id="top_button" onclick="goToTop()">
+				<img class="top_caret" src="res/img/keyboard_arrow_up-24px.svg" alt="^">
+			</button>
+			<div class="row h-adjust">
+				<div class="col-xl-6 vertical-center">
+					<h2 class="ourproject_title title_padding" style="color:black"> <b>Our Project</b> </h2>
+					<p class="ourproject_desc" style="color:black ; font-size: 22px"> We have explored the area of Financial Derivatives in the stock market mainly concentrating on options dealing with topics like option pricing (Black Scholes and Greeks), options strategies as well as trading systems</p>
+					
+
+				</div>
+				<div class="col-xl-6 vertical-center">
+					 <img src="res/img/here.svg" alt="Nature" class="responsive2"> <br> <br>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="work" class="section prereq container-fluid">
+			<div class="snap-pad"></div>
+			<!-- <div class="row h-adjust"> -->
+				<!-- <div class="col-xl-6 vertical-center"> -->
+					<br><br>
+					<h2 align="center" class="prereq_title title_padding" style="color:#A569BD "> PREREQUISITES </h2><br><br>
+					<p align="center" class="prereq_desc" style="color:white; font-size:22px"> If you're new to this field, this might help you understand a few key terms better, and aid in better visualisation of the algorithms </p><br>
+				<!-- </div> -->
+				<!-- <div class="col-xl-6 vertical-center" style="justify-content: center;"> -->
+					<!-- <p > -->
+				<!-- </div> -->
+					<p align="center">
+					<a class="button" href="res/preq.docx" download="preq.docx">Download Doc Now!</a>
+				</p ><br>
+				<p style="color:white; font-size:22px"align = "center">(._.) ( l: ) ( .-. ) ( :l ) (._.)</p>
+				
+	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="stuff" class="sectiond ourwork container-fluid">
+			<div class="snap-pad"></div>
+			<div class="row h-adjust">
+				<div class="col-xl-6 vertical-center">
+					<h2 class="ourwork_title title_padding" style="color: black"> OUR WORK </h2>
+					<!-- <p class="ourwork_desc" style="color: #707B7C "> We could do better </p> -->
+				</div>
+				<div class="col-xl-6 vertical-center">
+					<div class="row">
+						<div class="snt_card">
+							<span class="snt_div_text">
+								<div class="snt_card_title">
+									Black-Scholes
+								</div>
+								<div class="snt_card_desc">
+									 A revolutionary equation in the world of quantitative finance, dealing with the option pricing which won its formulators the Nobel Price for Economics
+								</div>
+							</span>
+							<span class="snt_div_button">
+								<button class="snt_card_button" onclick="window.location.href = 'try.html';">
+									GO!
+								</button>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="snt_card">
+							<span class="snt_div_text">
+								<div class="snt_card_title">Option Greeks
+
+									
+								</div>
+								<div class="snt_card_desc">
+									A set of variables derived from Black Scholes affecting the pricing as well as the movement of the option price in accordance with the changes in the underlying
+									 
+								</div>
+							</span>
+							<span class="snt_div_button">
+								<button class="snt_card_button" onclick="window.location.href = 'greek.html';">
+									GO!
+								</button>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="snt_card">
+							<span class="snt_div_text">
+								<div class="snt_card_title">
+									 Option Strategies
+								</div>
+								<div class="snt_card_desc">
+									A tried and tested combination of options designed to improve profits and reduce losses compared to the naked options
+								</div>
+							</span>
+							<span class="snt_div_button">
+								<button class="snt_card_button" onclick="window.location.href = 'options.html';">
+									GO!
+								</button>
+							</span>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="snt_card">
+							<span class="snt_div_text">
+								<div class="snt_card_title">
+									Trading Systems
+								</div>
+								<div class="snt_card_desc">
+									Algorithms to generate buy and sell signals and automate trading
+								</div>
+							</span>
+							<span class="snt_div_button">
+								<button class="snt_card_button" onclick="window.location.href = 'tsys.html';">
+									GO!
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="team" class="section2 team container-fluid">
+			<div class="snap-pad"></div>
+			<div class="row h-adjust">
+				<div class="col-xl-6 vertical-center">
+					<h2 class="team_title title_padding" style="color: #A569BD "> OUR TEAM </h2>
+					<p class="team_desc" style="color: white"> /╲/\╭( ͡° ͡° ͜ʖ ͡° ͡°)╮/\╱\</p>
+				</div>
+				<div class="col-xl-6 vertical-center" style="display: flex; justify-content: center; align-items: center;">
+					<div class="team_container">
+						<div  class="row team_detail">
+							<span id="mail_icon">
+								<img src="res/img/fem.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mail_desc"> <span class="inline-bold">Pavani Babburi</span>
+						</div>
+						<div class="row team_detail">
+							<span id="mobile_icon">
+								<img src="res/img/idc.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mobile_desc"> 2019101033</span>
+						</div>
+
+
+
+
+					</div>
+
+				</div>
+								<div class="col-xl-6 vertical-center" style="display: flex; justify-content: center; align-items: center;">
+					<div class="team_container">
+						<div  class="row team_detail">
+							<span id="mail_icon">
+								<img src="res/img/mal.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mail_desc"> <span class="inline-bold">Alapan Sau</span>
+						</div>
+						<div class="row team_detail">
+							<span id="mobile_icon">
+								<img src="res/img/idc.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mobile_desc"> 2019101081 </span>
+						</div>
+
+					</div>
+				</div>
+								<div class="col-xl-6 vertical-center" style="display: flex; justify-content: center; align-items: center;">
+					<div class="team_container">
+						<div  class="row team_detail">
+							<span id="mail_icon">
+								<img src="res/img/fem.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mail_desc"> <span class="inline-bold">Sharadha Iyer</span>
+						</div>
+						<div class="row team_detail">
+							<span id="mobile_icon">
+								<img src="res/img/idc.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mobile_desc"> 2019101048 </span>
+						</div>
+
+					</div>
+				</div>
+								<div class="col-xl-6 vertical-center" style="display: flex; justify-content: center; align-items: center;">
+					<div class="team_container">
+						<div  class="row team_detail">
+							<span id="mail_icon">
+								<img src="res/img/mal.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mail_desc"> <span class="inline-bold">Nirmal Manoj</span></span>
+						</div>
+						<div class="row team_detail">
+							<span id="mobile_icon">
+								<img src="res/img/idc.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mobile_desc">  2019111011</span>
+						</div>
+
+
+					</div>
+				</div>
+								<div class="col-xl-6 vertical-center" style="display: flex; justify-content: center; align-items: center;">
+					<div class="team_container">
+						<div  class="row team_detail">
+							<span id="mail_icon">
+								<img src="res/img/fem.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mail_desc"> <span class="inline-bold">Hasvitha Varma</span></span>
+						</div>
+						<div class="row team_detail">
+							<span id="mobile_icon">
+								<img src="res/img/idc.svg" style="height: calc(20px + 1.5vw); width: calc(20px + 1.5vw);">
+							</span>
+							<span id="mobile_desc"> 2019101030 </span>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="res/js/typing_text.js" type="text/javascript"></script>
+	<script src="res/js/work_carousel.js" type="text/javascript"></script>
+	<script src="res/js/scroll_top.js" type="text/javascript"></script>
+	<script src="res/js/sticky_navbar.js" type="text/javascript"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
